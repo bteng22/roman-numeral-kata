@@ -24,6 +24,7 @@ public class RomanNumeralTest {
     }
 
     @Test
-    public void threeShoulReturnRomanNumeralIII() {
+    public void threeShouldReturnRomanNumeralIII() {
+        assertThat(rmPrinter.evaluate(3), is ("III"));
     }
 }
