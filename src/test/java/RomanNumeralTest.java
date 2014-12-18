@@ -14,18 +14,22 @@ public class RomanNumeralTest {
     }
 
     @Test
-    public void oneShouldReturnRomanNumeralI() {
+    public void oneShouldReturnI() {
         assertThat(rmPrinter.evaluate(1), is("I"));
     }
 
     @Test
-    public void fiveShouldReturnRomanNumeralV() {
+    public void fiveShouldReturnV() {
         assertThat(rmPrinter.evaluate(5), is("V"));
     }
 
     @Test
-    public void tenShouldReturnRomanNumeralX() {
+    public void tenShouldReturnX() {
         assertThat(rmPrinter.evaluate(10), is("X"));
     }
 
+    @Test
+    public void thirtyFiveShouldReturnXXXV() {
+        assertThat(rmPrinter.evaluate(35), is ("XXXV"));
+    }
 }
