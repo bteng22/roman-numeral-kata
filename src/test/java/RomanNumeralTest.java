@@ -19,12 +19,13 @@ public class RomanNumeralTest {
     }
 
     @Test
-    public void twoShouldReturnRomanNumeralII() {
-        assertThat(rmPrinter.evaluate(2), is("II"));
+    public void fiveShouldReturnRomanNumeralV() {
+        assertThat(rmPrinter.evaluate(5), is("V"));
     }
 
     @Test
-    public void threeShouldReturnRomanNumeralIII() {
-        assertThat(rmPrinter.evaluate(3), is ("III"));
+    public void tenShouldReturnRomanNumeralX() {
+        assertThat(rmPrinter.evaluate(10), is("X"));
     }
+
 }
