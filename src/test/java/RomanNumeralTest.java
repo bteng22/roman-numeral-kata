@@ -30,6 +30,16 @@ public class RomanNumeralTest {
 
     @Test
     public void thirtyFiveShouldReturnXXXV() {
-        assertThat(rmPrinter.evaluate(35), is ("XXXV"));
+        assertThat(rmPrinter.evaluate(35), is("XXXV"));
+    }
+
+    @Test
+    public void nineHundredNinetySixShouldReturnCMXCVI() {
+        assertThat(rmPrinter.evaluate(996), is("CMXCVI"));
+    }
+
+    @Test
+    public void fourHundredFortyFourshouldReturnCDXLIV() {
+        assertThat(rmPrinter.evaluate(444), is("CDXLIV"));
     }
 }
