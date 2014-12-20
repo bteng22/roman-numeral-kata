@@ -15,9 +15,9 @@ public class RomanNumeral {
     public String evaluate(int number) {
         String romanNumeral = "";
         for(Map.Entry<Integer, String> romanEntry : ROMAN_CONSTANTS.entrySet()) {
-            Integer i = number / romanEntry.getKey();
-            romanNumeral += StringUtils.repeat(romanEntry.getValue(), i);
-            number -= romanEntry.getKey()*i;
+            Integer times = number / romanEntry.getKey();
+            romanNumeral += StringUtils.repeat(romanEntry.getValue(), times);
+            number -= romanEntry.getKey() * times;
         }
         return romanNumeral;
     }
